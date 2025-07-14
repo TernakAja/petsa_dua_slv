@@ -17,7 +17,12 @@ Modul ini terdapat fungsi untuk mendapatkan Tempratur / Suhu Objek, aspek ini ju
 > Kami telah melakukan riset & penelitian bio-sensing secara langsung di lapangan, berikut adalah link riset ilmiah yang telah kami buat <a href="">Tautan<a/>
 
 ## 2. Data Logic :
-TODO : Create a logic to communicate and provide necessary data between *SLAVE*  > *MASTER*.
+```
+TODO : 
+1. Create a logic to communicate and provide necessary data between *SLAVE*  > *MASTER*.
+2. Create timing sequence to send data, as example provide array of 5 or 10 data each 5 minutes
+3. Manage power-cycle necessarily, and reduce power consuming as much as possible.
+```
 
 
 
