@@ -1,2 +1,23 @@
-# petsa_dua_slv
-Sourcecode untuk device PETSA-02
+# PETSA-02 (Slave)
+Source code fungsi-fungsi, programming logic, untuk device slave PETSA-02, berikut adalah penjelasan masing-masing usecase yang terdapat pada device ini.
+
+## 1. Sensor Logic 
+Logic Sequence paling awal dalam fungsi device ini.
+
+### ❣️ - ppgSensor.ino 
+Modul ini sebagai parameter Utama untuk mendapatkan Kesehatan Objek **(Detak Jantung)** , kami menggunakan device **MAX30105**.
+- Saat initialState alias *initializePPG()*, device akan me-maksimalkan cahaya LED untuk penetrasi Maksimal, karena khususnya ketebalan kulit kuping objek (Hewan) lebih tebal dari kulit jari manusia.
+- Gunakan *getHeartRate()* untuk membaca detak jantung objek secara Live, teknologi bio-sensing yang kami adaptasi untuk mendapatkan data adalah dengan mencari & mengkomputasi-kan frekuensi yang muncul dari device , device ini menggunakan metode Photoplethysmography: Dimana device tersebut akan mencari momen tertentu saat aliran darah berubah & menciptakan sebuah pattern (BPM) atau detak setiap menit.
+
+### 🌡️ - infrared_sensor.ino
+Modul ini terdapat fungsi untuk mendapatkan Tempratur / Suhu Objek, aspek ini juga penting sebagai Parameter utama terhadap kesehatan Objek, di modul ini kami menggunakan sensor **MLX90614**.
+- Saat initialState, kami menyesuaikan Emmisivity berdasarkan referensi khusus mengenai ketebalan objek tersebut, sebagai contoh untuk manusia menggunakan *0.95* sampai *0.97*.
+- Fungsi *getTemprature()* akan memuat data suhu tubuh secara Threading atau terus menerus, 
+
+> Kami telah melakukan riset & penelitian bio-sensing secara langsung di lapangan, berikut adalah link riset ilmiah yang telah kami buat <a href="">Tautan<a/>
+
+## 2. Data Logic :
+TODO : Create a logic to communicate and provide necessary data between *SLAVE*  > *MASTER*.
+
+
+
