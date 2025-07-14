@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/maheran/Documents/TernakAja/Software/petsa_dua_slv",
+      "program": "/Users/maheran/Documents/TernakAja/Software/petsa_dua_slv/build/Debug/outDebug"
+    }
+  ]
+}
