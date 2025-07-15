@@ -14,7 +14,6 @@ Modul ini terdapat fungsi untuk mendapatkan Tempratur / Suhu Objek, aspek ini ju
 - Saat initialState, kami menyesuaikan Emmisivity berdasarkan referensi khusus mengenai ketebalan objek tersebut, sebagai contoh untuk manusia menggunakan *0.95* sampai *0.97*.
 - Fungsi *getTemprature()* akan memuat data suhu tubuh secara Threading atau terus menerus, 
 
-> Kami telah melakukan riset & penelitian bio-sensing secara langsung di lapangan, berikut adalah link riset ilmiah yang telah kami buat <a href="">Tautan<a/>
 
 ## 2. Data Logic :
 ```
