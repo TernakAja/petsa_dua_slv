@@ -37,8 +37,15 @@ void setup() {
   Wire.setClock(400000);
   delay(200);
 
-  myTicker.attach(300, taskMasterProvider);
+  myTicker.attach(60, taskMasterProvider);
 }
+
+void taskMasterProvider() {
+  // TODO:
+  // 1. Ngirim Data Ke Azure
+  // 3
+}
+
 
 void getDeviceDetails() {
     Serial.println("=== Device Info ===");
