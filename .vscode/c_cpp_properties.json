@@ -1,18 +1,47 @@
+
 {
-  "configurations": [
-    {
-      "name": "macos-clang-arm64",
-      "includePath": [
-        "${workspaceFolder}/**"
-      ],
-      "compilerPath": "/usr/bin/clang",
-      "cStandard": "${default}",
-      "cppStandard": "${default}",
-      "intelliSenseMode": "macos-clang-arm64",
-      "compilerArgs": [
-        ""
-      ]
-    }
-  ],
-  "version": 4
+
+    "configurations": [
+
+        {
+
+            "name": "ESP8266",
+
+            "includePath": [
+
+                "/**",
+
+                "/path/to/Arduino/hardware/esp8266/2.7.4/tools/sdk/include",
+
+                "/path/to/Arduino/hardware/esp8266/2.7.4/tools/sdk/lwip2/include",
+
+                "/path/to/Arduino/hardware/esp8266/2.7.4/cores/esp8266",
+
+                "/path/to/Arduino/hardware/esp8266/2.7.4/libraries/Ticker/src"
+
+            ],
+
+            "defines": [
+
+                "ARDUINO=10805",
+
+                "ESP8266"
+
+            ],
+
+            "compilerPath": "/usr/bin/xtensa-lx106-elf-g++",
+
+            "cStandard": "c11",
+
+            "cppStandard": "c++17",
+
+            "intelliSenseMode": "gcc-x64"
+
+        }
+
+    ],
+
+    "version": 4
+
 }
+
