@@ -40,14 +40,17 @@ void setup() {
 }
 
 void taskMasterProvider() {
-  // TODO:
-  // 1. Ngirim Data Ke Azure
-  // 3
+  // Kirim Wifi Details Ke IoT HUB
+}
+
+void provideCurrentState() {
+  // TODO :
+  // Ngirim Data ke IoT HUb
 }
 
 
 void getDeviceDetails() {
-    Serial.println("=== Device Info ===");
+  Serial.println("=== Device Info ===");
   Serial.print("Chip ID: ");
   Serial.println(ESP.getChipId());
 
