@@ -21,9 +21,8 @@ void taskMasterProvider() {
 Ticker myTicker;
 
 void loop() {
-  // bpmState = readHeartBeat();
-  // tempState = readTemperature();
-  
+  bpmState = readHeartBeat();
+  tempState = readTemperature();
 }
 
 void setup() {
